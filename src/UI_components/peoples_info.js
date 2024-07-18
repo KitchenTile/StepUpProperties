@@ -6,7 +6,7 @@ export default function peoplesInfo() {
 
   empoloyeeData.forEach((employee, index) => {
     box.innerHTML += `
-    <div id="employee${index}">
+    <div class="box" id="employee${index}">
       <div class="image-box" >
           <img src=${employee.img} alt="img" />
       </div>

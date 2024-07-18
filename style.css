@@ -139,46 +139,56 @@ body, html {
 /* EMPLOYEE PRESENTATION */
 
 .box-container {
+  color: white;
   position: relative;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
   background-color: rgb(95, 23, 35);
   border-width: 3px 0px 3px 0px;
   border-color: black;
   border-style: solid;
+  flex-direction: column;
 }
 
 .box-container #title {
-  position: relative;
-  top: -170px;
-  left: 200px;
+  text-align: center;
+}
+
+.employee-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 500px);
+  gap: 25px;
+  padding: 10px;
+  justify-content: space-evenly;
+  justify-items: start;
 }
 
 .box-container .box {
+  /* background: rgb(122, 31, 46); */
   position: relative;
-  top: 100px;
-  left: -150px;
+  padding: 15px;
   width: 320px;
   height: 320px;
-  margin: 38px;
-  margin-bottom: 138px;
+  margin: 15px;
+  transition: all 0.5s ease;
 }
 
-.box-container .box:hover .image-box{
-  transform: translate(-100px);
-}
+/* .box-container .box:hover .image-box{
+  transform: translate(-10px);
+} */
 
 .box-container .box:hover .text-box {
-  transform: translate(300px, 75px);
+  transform: translate(335px, 50px);
   opacity: 1;
+}
+
+.box-container .box:hover {
+  transform: translate(-80px);
+  background: rgb(122, 31, 46);
+  width: 610px;
 }
 
 .image-box {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   z-index: 2;
@@ -186,6 +196,7 @@ body, html {
 }
 
 .image-box img {
+  border-radius: 10px;
   width: 320px;
   height: 320px;
   object-fit: cover;
@@ -195,8 +206,7 @@ body, html {
 .text-box{
   opacity: 0;
   position: absolute;
-  top: 0;
-  left: 0;
+  width: 17rem;
   text-align: justify;
   transition: all 0.5s ease;
 }
@@ -234,6 +244,7 @@ body, html {
 }
 
 .carr{
+  color: white;
   background-color: rgb(95, 23, 35);
   width: 900px;
   height: 550px;
