@@ -1,10 +1,13 @@
 import mainText from "./UI_components/main_text"
 import peoplesInfo from "./UI_components/peoples_info";
+import propertySlides from "./UI_components/properties_car";
 
 
 mainText();
 
 peoplesInfo();
+
+propertySlides();
 
 const screen = document.getElementById("body")
 
