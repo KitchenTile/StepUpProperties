@@ -1,6 +1,7 @@
 
 
 body, html {
+  /* max-width: 1278px; */
   margin: 0;
   padding: 0;
   height: 100%;
@@ -222,7 +223,7 @@ body, html {
   text-align: justify;
 }
 
-/* PROPERTY CARROUSELL */
+/* PROPERTY CAROUSEL */
 
 .carr-container{
   display: flex;
@@ -233,8 +234,8 @@ body, html {
 }
 
 .carr{
-  /* width: 100%; */
-  max-width: 800px;
+  background-color: rgb(95, 23, 35);
+  width: 900px;
   height: 550px;
   margin: 20px;
   text-align: center;
@@ -248,7 +249,9 @@ body, html {
   position: relative;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
-  height: 80%;
+  height: 95%;
+  overflow-x: hidden;  
+
 }
 
 .slide {
@@ -284,11 +287,30 @@ body, html {
 .slide-prev {
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
-  left: 5%;
+  left: 2%;
 }
 
 .slide-next{
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
-  right: 5%;
+  right: 2%;
+}
+
+.slides-nav {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  width: 200px;
+  margin-left: -100px;
+  text-align: center;
+}
+
+.slides-navlink {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: black;
+  margin: 0 10px 0 10px;
 }
