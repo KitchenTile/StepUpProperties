@@ -1,12 +1,12 @@
 import mainText from "./UI_components/main_text"
+import mapIntro from "./UI_components/mapIntro";
 import peoplesInfo from "./UI_components/peoples_info";
 import propertySlides from "./UI_components/properties_car";
 
 
 mainText();
-
+mapIntro();
 peoplesInfo();
-
 propertySlides();
 
 const screen = document.getElementById("body")
