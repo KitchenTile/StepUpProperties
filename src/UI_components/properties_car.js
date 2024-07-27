@@ -11,8 +11,8 @@ const propertySlides = () => {
             <div class="slide" id="${index + 1}">
                 <iframe
                     src=${property.mapSrc}
-                    width="350"
-                    height="350" 
+                    width="40%"
+                    height="70%" 
                     style="border-radius:10px;" 
                     allowfullscreen="" 
                     loading="lazy" 
