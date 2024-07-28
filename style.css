@@ -6,7 +6,19 @@ body, html {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
+}
+
+h1 {
+  font-family: "Trirong", Georgia, 'Times New Roman', Times, serif;
+  font-size: 3rem;
+}
+
+
+
+#title{
+  font-style: italic;
 }
 
 /* .wrapper {
@@ -59,8 +71,13 @@ body, html {
 .top-bar #icon {
   position: relative;
   opacity: 0;
-  left: 27%;
+  left: 25%;
   height: 100%;
+}
+
+.top-bar #SUP {
+  position: relative;
+  right: .7%;
 }
 
 /* MAIN IMAGE AND TEXT */
@@ -248,6 +265,8 @@ body, html {
 #introTextSection {
   width: 40%;
   text-align: justify;
+    font-size: x-large;
+    line-height: 2.5rem;
 }
 
 /* PROPERTY CAROUSEL */
