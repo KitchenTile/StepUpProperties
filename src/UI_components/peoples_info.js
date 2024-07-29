@@ -11,7 +11,7 @@ export default function peoplesInfo() {
           <img src=${employee.img} alt="img" />
       </div>
       <div class="text-box">
-        <h2> ${employee.name} </h2>
+        <h2 id="title"> ${employee.name} </h2>
         <p>${employee.description}</p>
       </div>
     </div>`

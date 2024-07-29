@@ -1,13 +1,17 @@
+import contact_form from "./UI_components/contact_form";
 import mainText from "./UI_components/main_text"
 import mapIntro from "./UI_components/mapIntro";
 import peoplesInfo from "./UI_components/peoples_info";
 import propertySlides from "./UI_components/properties_car";
+import socialsComp from "./UI_components/socials_comp";
 
 
 mainText();
 mapIntro();
 peoplesInfo();
 propertySlides();
+contact_form();
+socialsComp();
 
 const screen = document.getElementById("body")
 
