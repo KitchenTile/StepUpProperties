@@ -15,10 +15,14 @@ h1 {
   font-size: 3rem;
 }
 
-
-
 #title{
   font-style: italic;
+}
+
+.inner-wrapper {
+  max-width: 1260px; /* Same max width as the wrapper */
+  margin: 20px 650px 60px 650px;
+  padding: 0 20px; /* Optional padding for breathing space */
 }
 
 /* .wrapper {
@@ -105,17 +109,22 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .main-text-section #main_text {
   display: flex;
-  /* height: 60%; */
+  font-size: 1.4rem;
+  line-height: 2.25rem;
   width: 90%;
   text-align: justify;
   text-overflow: hidden;
   opacity: 1;
   text-wrap: wrap;
+}
+
+.main-text-section #title{
+  font-size: 2rem;
 }
 
 @keyframes shrinkDiv {
@@ -157,6 +166,29 @@ h1 {
   to { width: 90%; opacity: 1; transform: translateY(0); }
 }
 
+
+/* MAP INTRO CONTAINER */
+
+.map-intro-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#mapIntroContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+#introTextSection {
+  width: 40%;
+  text-align: justify;
+    font-size: x-large;
+    line-height: 2.5rem;
+}
 
 
 /* EMPLOYEE PRESENTATION */
@@ -241,33 +273,6 @@ h1 {
   padding: 20px 0;
 }
 
-.inner-wrapper {
-  max-width: 1260px; /* Same max width as the wrapper */
-  margin: 20px 650px 60px 650px;
-  padding: 0 20px; /* Optional padding for breathing space */
-}
-/* MAP INTRO CONTAINER */
-
-.map-intro-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#mapIntroContainer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  width: 100%;
-}
-
-#introTextSection {
-  width: 40%;
-  text-align: justify;
-    font-size: x-large;
-    line-height: 2.5rem;
-}
 
 /* PROPERTY CAROUSEL */
 
@@ -361,3 +366,77 @@ h1 {
   background-color: black;
   margin: 0 10px 0 10px;
 }
+
+/* CONTACT FORM */
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(95, 23, 35);
+  color: white;
+}
+
+.contact-and-socials {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+}
+
+.contact-field {
+  height: 2rem;
+  border: 2px solid black;
+}
+
+#message {
+  height: 6rem;
+}
+
+#socialDiv {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.socials-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+
+
+.svg-icon {
+  --svg-color: #FF0000; /* Change to your desired color */
+}
+
+
+#facebook{
+  color: #1778f2;
+}
+
+#X{
+  color: #1da1f2;
+}
+
+#wordpress{
+  color: #3499cd;
+}
+
+.vl {
+  border-left: 8px solid white;
+  border-radius: 5px;
+  height: 19rem;
+  margin: 0 9rem;
+}
+
