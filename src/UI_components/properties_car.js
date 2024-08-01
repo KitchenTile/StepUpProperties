@@ -20,7 +20,7 @@ const propertySlides = () => {
                 </iframe>
                 <div class="info">
                     <h1> ${property.address} </h1>
-                    <p> ${property.description} </p>
+                    <p id="description"> ${property.description} </p>
                 </div>
                 <a class="slide-prev" href="#${index === 0 ? propertyData.length : index}" title="Prev"></a>
                 <a class="slide-next" href="#${(index + 2) > propertyData.length ? 1 : index + 2}" title="Next"></a>
