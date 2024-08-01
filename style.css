@@ -323,6 +323,7 @@ h1 {
 .info {
   display: flex;
   flex-direction: column;
+  width: 50%;
 }
 
 .slide a{
@@ -419,7 +420,6 @@ h1 {
 .svg-icon {
   --svg-color: #FF0000; /* Change to your desired color */
 }
-
 
 #facebook{
   color: #1778f2;
