@@ -10,6 +10,8 @@ body, html {
   
 }
 
+.wrapper
+
 h1 {
   font-family: "Trirong", Georgia, 'Times New Roman', Times, serif;
   font-size: 3rem;
@@ -20,9 +22,9 @@ h1 {
 }
 
 .inner-wrapper {
-  max-width: 1260px; /* Same max width as the wrapper */
-  margin: 20px 650px 60px 650px;
-  padding: 0 20px; /* Optional padding for breathing space */
+  max-width: 1200px; /* Same max width as the wrapper */
+  margin: 20px auto 60px auto;
+  padding: 0 20px;
 }
 
 /* .wrapper {
@@ -215,12 +217,13 @@ h1 {
   gap: 25px;
   padding: 10px;
   justify-content: space-evenly;
-  justify-items: start;
+  justify-items: center;
 }
 
 .box-container .box {
   /* background: rgb(122, 31, 46); */
   position: relative;
+  
   padding: 15px;
   width: 320px;
   height: 320px;
@@ -238,7 +241,7 @@ h1 {
 }
 
 .box-container .box:hover {
-  transform: translate(-80px);
+  transform: translate(40px);
   background: rgb(122, 31, 46);
   width: 610px;
 }
@@ -271,6 +274,17 @@ h1 {
 .full-width-bg {
   width: 100%;
   padding: 20px 0;
+}
+
+@media only screen and (max-width: 2200px) {
+  .employee-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    gap: 25px;
+    padding: 10px;
+    justify-content: space-evenly;
+    justify-items: center;
+  }
 }
 
 
