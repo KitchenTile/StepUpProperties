@@ -9,6 +9,7 @@ export default function peoplesInfo() {
     <div class="box" id="employee${index}">
       <div class="image-box" >
           <img src=${employee.img} alt="img" />
+          <h2 id="title"> ${employee.name} </h2>
       </div>
       <div class="text-box">
         <h2 id="title"> ${employee.name} </h2>
