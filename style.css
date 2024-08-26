@@ -299,15 +299,13 @@ h1 {
 
 .photo-text-container {
   display: grid;
-  grid-template: 100% / 50% 50%;
+  grid-template: 50% 50% / 50% 50%;
   justify-items: end;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  /* gap: 20px; */
   background-color: rgb(95, 23, 35);
   border-radius: 10px;
-
-
 }
 
 .photo-text-container  .photo {
