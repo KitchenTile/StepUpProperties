@@ -295,6 +295,37 @@ h1 {
   }
 }
 
+/* PHOTO TEXT CONTAINER */
+
+.photo-text-container {
+  display: grid;
+  grid-template: 100% / 50% 50%;
+  justify-items: end;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: rgb(95, 23, 35);
+  border-radius: 10px;
+
+
+}
+
+.photo-text-container  .photo {
+  height: 408px;
+}
+
+.photo-text-container  img {
+  border-radius: 10px 0 0 10px;
+}
+
+.photo-text-container  p {
+  text-align: justify;
+  font-size: x-large;
+  line-height: 2.8rem;
+  color: white;
+  padding: 20px  50px 20px 50px;
+}
+
 
 /* PROPERTY CAROUSEL */
 
