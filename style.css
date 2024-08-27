@@ -298,22 +298,22 @@ h1 {
 /* PHOTO TEXT CONTAINER */
 
 .photo-text-container {
+  margin-top: 75px;
   display: grid;
-  grid-template: 50% 50% / 50% 50%;
-  justify-items: end;
-  justify-content: center;
-  align-items: center;
+  grid-template: 400px 400px / 600px 600px;
   /* gap: 20px; */
   background-color: rgb(95, 23, 35);
   border-radius: 10px;
+  padding: 0;
 }
 
-.photo-text-container  .photo {
-  height: 408px;
+
+.photo-text-container #photo1{
+  border-radius: 10px 0 0 0;
 }
 
-.photo-text-container  img {
-  border-radius: 10px 0 0 10px;
+.photo-text-container #photo2{
+  border-radius: 0 0 10px 0;
 }
 
 .photo-text-container  p {
@@ -321,7 +321,7 @@ h1 {
   font-size: x-large;
   line-height: 2.8rem;
   color: white;
-  padding: 20px  50px 20px 50px;
+  padding: 50px 50px 20px 50px;
 }
 
 
@@ -340,7 +340,7 @@ h1 {
   background-color: rgb(95, 23, 35);
   /* width: 1260px; */
   height: 650px;
-  margin: 20px;
+  margin: 20px 0 20px 0;
   text-align: center;
   border-radius: 20px;
   position: relative;
