@@ -1,4 +1,6 @@
-
+/* * {
+  box-sizing: border-box;
+} */
 
 body, html {
   margin: 0;
@@ -44,9 +46,6 @@ h1 {
   transition: background-color 0.3s;
 }
 
-/* .top-bar:hover {
-  background-color: rgb(255, 255, 255);
-} */
 
 #burger-menu {
   position: relative;
