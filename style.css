@@ -187,6 +187,20 @@ h1 {
     line-height: 2.5rem;
 }
 
+/* ZOOMED IN IMAGE */
+.zoomed-in-image {
+  overflow: hidden;
+  padding-bottom: 55%;
+}
+
+.zoomed-in-image img{
+  width: 100%;
+  max-width: none;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 
 /* EMPLOYEE PRESENTATION */
 
