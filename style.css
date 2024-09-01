@@ -70,7 +70,10 @@ h1 {
   position: relative;
   opacity: 0;
   left: 18%;
-  height: 100%;
+}
+
+.top-bar #icon img {
+  height: 50px;
 }
 
 .top-bar #SUP {
