@@ -5,6 +5,7 @@ import peoplesInfo from "./UI_components/peoples_info";
 import photoTextContainer from "./UI_components/photo_text";
 import propertySlides from "./UI_components/properties_car";
 import socialsComp from "./UI_components/socials_comp";
+import zoomedInImg from "./UI_components/zoomed_in_image";
 
 
 mainText();
@@ -14,6 +15,8 @@ propertySlides();
 contact_form();
 socialsComp();
 photoTextContainer();
+zoomedInImg();
+
 
 const screen = document.getElementById("body")
 
@@ -24,6 +27,27 @@ screen.addEventListener('scroll', () => {
           const topBar = document.getElementById("topBar")
           const burgerMenu = document.getElementById("burger-menu");
           const icon = document.getElementById("icon");
+          const zoomImg = document.querySelector(".zoomed-in-image img");
+          const scrollImg = document.querySelector("#photo1");
+          const scrollImg2 = document.querySelector("#photo2");
+
+
+          let scrollPos = screen.scrollTop;
+          let newWidth = 100 + scrollPos / 10 + '%';
+          // let newTop = -(scrollPos / 10) + '%';
+          // let blurValue = scrollPos / 200 + 'px';
+          let newTop = 200 - scrollPos / 10 + "px";
+
+          let newHeight = 80 + scrollPos / 75 + '%'
+
+          zoomImg.style.width = newWidth;
+          // zoomImg.style.top = newTop;
+          // zoomImg.style.filter = 'blur('+blurValue+')';
+
+          scrollImg.style.height = newHeight;
+          scrollImg2.style.top = newTop;
+
+
       
   
           if (screen.scrollTop > 50) {
@@ -42,5 +66,4 @@ screen.addEventListener('scroll', () => {
             icon.style.animation = "hideHeader 0.7s forwards";
         }
       });
-
 
