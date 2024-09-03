@@ -3,6 +3,7 @@
 } */
 
 body, html {
+  background-color: white;
   margin: 0;
   padding: 0;
   height: 100%;
@@ -183,18 +184,20 @@ h1 {
 #introTextSection {
   width: 40%;
   text-align: justify;
-    font-size: x-large;
-    line-height: 2.5rem;
+  font-size: x-large;
+  line-height: 2.5rem;
 }
 
 /* ZOOMED IN IMAGE */
 .zoomed-in-image {
   overflow: hidden;
-  padding-bottom: 55%;
+  margin: 50px auto;
+  max-width: 1200px;
+  max-height: 800px;
 }
 
 .zoomed-in-image img{
-  width: 100%;
+  width: 1200px;
   max-width: none;
   position: relative;
   left: 50%;
@@ -328,13 +331,24 @@ h1 {
   padding: 0;
 }
 
+.photo{
+  overflow: hidden;
+}
 
-.photo-text-container #photo1{
+.photo#phcontainer1 {
   border-radius: 10px 0 0 0;
 }
 
-.photo-text-container #photo2{
+.photo#phcontainer2 {
   border-radius: 0 0 10px 0;
+}
+
+
+.photo-text-container #photo2{
+  max-width: 600px;
+  height: 600px;
+  position: relative;
+  top: 0px;
 }
 
 .photo-text-container  p {
