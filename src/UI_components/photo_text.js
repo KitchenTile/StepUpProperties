@@ -5,7 +5,7 @@ import hendon_pic2 from "../images/hendonpicture2.jpg"
 const photoTextContainer = () => {
     const photoTextContainer = document.querySelector(".photo-text-container");
     photoTextContainer.innerHTML = `
-    <div class="photo">
+    <div class="photo" id="phcontainer1">
         <img src=${hendon_pic1} alt="hendon_pic1" id="photo1" />
     </div>
     <div class="text">
@@ -14,7 +14,7 @@ const photoTextContainer = () => {
     <div class="text">
         <p> Our commitment to staying ahead of market trends and utilising innovative technologies ensures that you have access to the latest information and tools to make informed decisions.</p>
     </div>
-    <div class="photo">
+    <div class="photo" id="phcontainer2">
         <img src=${hendon_pic2} alt="hendon_pic1" id="photo2"/>
     </div>
     
