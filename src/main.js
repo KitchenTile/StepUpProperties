@@ -34,9 +34,8 @@ screen.addEventListener('scroll', () => {
 
           let scrollPos = screen.scrollTop;
           let newWidth = 100 + scrollPos / 10 + '%';
-          // let newTop = -(scrollPos / 10) + '%';
-          // let blurValue = scrollPos / 200 + 'px';
-          let newTop = 200 - scrollPos / 10 + "px";
+
+          let topAfterScroll = 200 - scrollPos / 10 + "px";
 
           let newHeight = 80 + scrollPos / 75 + '%'
 
@@ -45,7 +44,8 @@ screen.addEventListener('scroll', () => {
           // zoomImg.style.filter = 'blur('+blurValue+')';
 
           scrollImg.style.height = newHeight;
-          scrollImg2.style.top = newTop;
+          
+          scrollImg2.style.top = topAfterScroll;
 
 
       
